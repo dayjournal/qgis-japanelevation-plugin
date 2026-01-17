@@ -3,7 +3,7 @@ name = "qgis-japanelevation-plugin"
 version = "3.0.0"
 description = "Display elevation value of specified position on QGIS using GSI Japan Elevation API"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [
     { name = "Yasunori Kirimoto", email = "info@dayjournal.dev" }
 ]
@@ -12,6 +12,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "pyqt5-stubs>=5.15.6.0",
+    "PyQt6-stubs>=6.4.0.0",
     "ruff>=0.14.0",
 ]
 

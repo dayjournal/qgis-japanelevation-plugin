@@ -3,8 +3,9 @@ name=Japan Elevation
 description=Display elevation value of specified position on QGIS
 about=Display elevation value of specified position on QGIS using Elevation API by Geospatial Information Authority of Japan (GSI).
 qgisMinimumVersion=3.0
-qgisMaximumVersion=3.99
+qgisMaximumVersion=4.99
 version=3.0.0
+supportsQt6=True
 
 # Plugin main icon
 icon=ui/icon.png
