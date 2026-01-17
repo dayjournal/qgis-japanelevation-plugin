@@ -1,0 +1,18 @@
+[general]
+name=Japan Elevation
+description=Display elevation value of specified position on QGIS
+about=Display elevation value of specified position on QGIS using Elevation API by Geospatial Information Authority of Japan (GSI).
+qgisMinimumVersion=3.0
+qgisMaximumVersion=3.99
+version=3.0.0
+
+# Plugin main icon
+icon=ui/icon.png
+
+author=Yasunori Kirimoto
+email=info@dayjournal.dev
+homepage=https://github.com/dayjournal/qgis-japanelevation-plugin
+tracker=https://github.com/dayjournal/qgis-japanelevation-plugin/issues
+repository=https://github.com/dayjournal/qgis-japanelevation-plugin
+tags=elevation,japan,gsi,dem,elevation
+category=Web
