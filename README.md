@@ -1,71 +1,69 @@
-# JapanElevation
-![README01](./img/README01.png)
+# Japan Elevation Plugin
 
-Display elevation value of specified position on QGIS.(QGISv3)  
-Using [Elevation API](http://maps.gsi.go.jp/development/api.html) by Geospatial Information Authority of Japan.  
+Read this in other languages: [Japanese](./README_ja.md)
 
-[QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/JapanElevation)  
+![logo](img/logo.png)
 
-[QGISv2 Repository](https://github.com/dayjournal/JapanElevation/tree/QGIS2)  
+Display elevation value of specified position on QGIS using [Elevation API](https://maps.gsi.go.jp/development/elevation_s.html) by Geospatial Information Authority of Japan (GSI).
 
-<br/>
+## QGIS Python Plugins Repository
 
-### Other country version  
-[AustrianElevation](https://github.com/maegger/AustrianElevation)
+[Japan Elevation Pluginn](https://plugins.qgis.org/plugins/japan_elevation)  
 
-<br/>
+## blog
+
 
 ## Usage
-![README02](./img/README02.gif)
-- Click "JapanElevation".
-- Click the designated position to display the elevation value.
 
-<br/>
+![menu](./img/menu.gif)
+
+1. Click "Japan Elevation".
+2. Click anywhere on the map canvas.
+3. The elevation value and data source will be displayed in a dialog.
+
+## Development
+
+### Requirements
+
+- [uv](https://docs.astral.sh/uv/)
+- QGIS 3.x
+
+### Setup
+
+```bash
+# Install dependencies
+uv sync
+
+# Lint
+uv run ruff check .
+
+# Format
+uv run ruff format .
+```
+
+### Local Development
+
+Create a symbolic link to the QGIS plugins directory:
+
+**macOS:**
+```bash
+ln -s /path/to/japan_elevation ~/Library/Application\ Support/QGIS/QGIS3/profiles/default/python/plugins/japan_elevation
+```
+
+**Windows:**
+```powershell
+mklink /D "%APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\japan_elevation" "C:\path\to\japan_elevation"
+```
+
+**Linux:**
+```bash
+ln -s /path/to/japan_elevation ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/japan_elevation
+```
+
+After editing the code, reload the plugin in QGIS to see the changes.
 
 ## License
+
 Python modules are released under the GNU General Public License v2.0
 
-Copyright (c) 2018 Yasunori Kirimoto
-
-<br/>
-
----
-
-<br/>
-
-### Japanese
-
-<br/>
-
-# 標高値取得
-![README01](./img/README01.png)
-
-QGISで指定位置の標高値を表示(QGISv3)  
-国土地理院の[標高API](http://maps.gsi.go.jp/development/api.html)を利用
-
-[QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/JapanElevation)  
-
-[QGISv2 Repository](https://github.com/dayjournal/JapanElevation/tree/QGIS2)  
-
-<br/>
-
-### 他の国のバージョン  
-[AustrianElevation](https://github.com/maegger/AustrianElevation)
-
-<br/>
-
-##  使用方法
-![README02](./img/README02.gif)
-- JapanElevationボタンクリック  
-- 指定位置クリックで標高値表示  
-
-<br/>
-
-## ライセンス
-Python modules are released under the GNU General Public License v2.0
-
-Copyright (c) 2018 Yasunori Kirimoto
-
-<br/>
-
----
+Copyright (c) 2018-2026 Yasunori Kirimoto
