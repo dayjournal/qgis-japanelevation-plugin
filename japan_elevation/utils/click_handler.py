@@ -89,10 +89,7 @@ class ElevationClickHandler(QgsMapTool):
         Updates the dialog with elevation data.
         """
         elevation = data.get("elevation", "N/A")
-        if elevation != "-----":
-            elevation_text = f"{elevation} m"
-        else:
-            elevation_text = "No data"
+        elevation_text = f"{elevation} m" if elevation != "-----" else "No data"
 
         data_source = data.get("hsrc", "Unknown")
 
