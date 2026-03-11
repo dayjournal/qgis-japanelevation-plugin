@@ -4,6 +4,8 @@ from qgis.PyQt import uic
 from qgis.PyQt.QtCore import Qt
 from qgis.PyQt.QtWidgets import QDialog
 
+from ..style_loader import load_style
+
 FORM_CLASS, _ = uic.loadUiType(os.path.join(os.path.dirname(__file__), "dialog.ui"))
 
 
@@ -19,8 +21,12 @@ class ElevationDialog(QDialog, FORM_CLASS):
         Initializes the elevation dialog by loading the UI components.
         """
         super().__init__(parent)
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)  # type: ignore
+        try:
+            self.setWindowFlags(Qt.WindowType.WindowStaysOnTopHint)
+        except AttributeError:
+            self.setWindowFlags(Qt.WindowStaysOnTopHint)  # type: ignore
         self.setupUi(self)
+        load_style(self)
 
     def set_elevation(self, value: str) -> None:
         """

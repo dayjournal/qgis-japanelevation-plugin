@@ -1,0 +1,39 @@
+/* ============================================
+   Japan Elevation
+   ============================================ */
+
+/* --- Dialog Base --- */
+QDialog {
+    background-color: #0E0B1A;
+    color: #F0ECF8;
+}
+
+/* --- Field Name Labels (left column) --- */
+QLabel#label_elevation,
+QLabel#label_data {
+    color: #8878B0;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 0px;
+}
+
+/* --- Elevation Value (primary display) --- */
+QLabel#label_elevation_value {
+    background-color: #1A1528;
+    color: #06D6A0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+}
+
+/* --- Data Source Value --- */
+QLabel#label_data_value {
+    background-color: #1A1528;
+    color: #8878B0;
+    font-size: 13px;
+    padding: 6px 12px;
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+}
