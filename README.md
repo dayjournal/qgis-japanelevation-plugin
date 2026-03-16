@@ -8,7 +8,7 @@ Display elevation value of specified position on QGIS using [Elevation API](http
 
 ## QGIS Python Plugins Repository
 
-[Japan Elevation Pluginn](https://plugins.qgis.org/plugins/japan_elevation)  
+[Japan Elevation Pluginn](https://plugins.qgis.org/plugins/JapanElevation)  
 
 ## blog
 
@@ -26,7 +26,7 @@ Display elevation value of specified position on QGIS using [Elevation API](http
 ### Requirements
 
 - [uv](https://docs.astral.sh/uv/)
-- QGIS 3.x
+- QGIS 3.x , 4.x
 
 ### Setup
 

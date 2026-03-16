@@ -8,7 +8,7 @@
 
 ## QGIS Python Plugins Repository
 
-[Japan Elevation Pluginn](https://plugins.qgis.org/plugins/japan_elevation)    
+[Japan Elevation Pluginn](https://plugins.qgis.org/plugins/JapanElevation)  
 
 ## blog
 
@@ -26,7 +26,7 @@
 ### 必要なツール
 
 - [uv](https://docs.astral.sh/uv/)
-- QGIS 3.x
+- QGIS 3.x , 4.x
 
 ### セットアップ
 
