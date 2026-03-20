@@ -5,7 +5,6 @@ about=Display elevation value of specified position on QGIS using Elevation API 
 qgisMinimumVersion=3.34
 qgisMaximumVersion=4.99
 version=4.1.0
-supportsQt6=True
 
 # Plugin main icon
 icon=ui/icon.png
